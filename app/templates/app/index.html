@@ -1,0 +1,26 @@
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<div class="'row">
+    {% for item in list %}
+    <div class="col-sm-12">
+        <div class="list-group">
+          <a href="/detail/{{item.id}}" class="list-group-item">{{item.title}}</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+<ul>
+    {% for item in list %}
+    <li>
+        <a href ='/detail/{{item.id}}'>
+            {{item.title }}</a>
+    </li>
+    {% endfor %}
+</ul>
